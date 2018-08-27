@@ -2,8 +2,8 @@
 
 $host  = "localhost";
 $db    = "galeria";
-$user  = "root";
-$pass  = "hugo2010";
+$user  = "hugo";
+$pass  = "Hug@2010";
 $drive = "mysql:host={$host};dbname={$db}";
 
 try {

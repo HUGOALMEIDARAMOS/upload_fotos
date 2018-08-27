@@ -5,14 +5,14 @@ try{
     require_once 'conexao.php';
 
     //Verificar se existe o id do pais no post
-    if(!isset($_POST['id_galeria']))
-        throw new Exception("Nenhum id de galeria foi enviado!");
-
-    //Verificar se existe o nome do pais no post
     if(!isset($_POST['titulo']))
         throw new Exception("Nenhum titulo foi enviado!");
- if(!isset($_POST['descricao']))
-        throw new Exception("Nenhuma descricao foi enviado!");
+
+    //Verificar se existe o nome do pais no post
+    if(!isset($_POST['descricao']))
+        throw new Exception("Nenhuma descrição foi enviado!");
+ if(!isset($_POST['id_galeria']))
+        throw new Exception("Nenhuma id foi enviado!");
 
     //Query para atualizar pais
     $query = "UPDATE galerias SET titulo = :titulo, fecha_alta = :fecha_alta, descricao= :descricao WHERE id_galeria = :id_galeria";
